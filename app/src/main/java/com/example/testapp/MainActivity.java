@@ -6,15 +6,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "Shali";
 
+    private static final String TAG = "Shali";
+    Button button;
+    TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(TAG,"onCreate");
+
+        button = findViewById(R.id.btnOk);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                text = findViewById(R.id.txt_hello);
+                text.setText("Welcome Shalitha");
+            }
+        });
     }
 
     @Override
