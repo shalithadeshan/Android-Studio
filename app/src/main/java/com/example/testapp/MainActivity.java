@@ -3,6 +3,7 @@ package com.example.testapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "Shali";
     Button button;
+    Button button2;
     TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 text = findViewById(R.id.txt_hello);
                 text.setText("Welcome Shalitha");
+            }
+        });
+
+        button2 = findViewById(R.id.btnNext);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =  new Intent(getApplicationContext(),Activity2.class);
+                startActivity(i);
             }
         });
     }

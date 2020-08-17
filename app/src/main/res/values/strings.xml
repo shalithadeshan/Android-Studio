@@ -2,4 +2,7 @@
     <string name="app_name">TestApp</string>
     <string name="hello_world">Hello world</string>
     <string name="ok">Ok</string>
+    <string name="nextActivity">Next Activity</string>
+    <string name="activityTwo">Activity Two</string>
+    <string name="preactivity">Previous Activity</string>
 </resources>
