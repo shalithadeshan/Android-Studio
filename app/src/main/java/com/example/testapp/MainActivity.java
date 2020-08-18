@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -15,8 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static final String TAG = "Shali";
-    Button button;
-    Button button2;
+    Button button,button2,sendmail;
     TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +55,27 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i =  new Intent(getApplicationContext(),Activity2.class);
                 startActivity(intent);
+            }
+        });
+
+
+        //implicit intent
+
+        Intent ii = new Intent(Intent.ACTION_SEND);
+        final Intent chooser;
+        ii.setData(Uri.parse("mailto"));
+        ii.putExtra(Intent.EXTRA_EMAIL, new String[]{"shalithad8520jayasekara@gmail.com"});
+        ii.putExtra(Intent.EXTRA_SUBJECT, "This is our test subject");
+        ii.putExtra(Intent.EXTRA_TEXT,"This is out test email body");
+        ii.setType("message/rfc822");
+        chooser = Intent.createChooser(ii,"Send email test app");
+
+        sendmail = findViewById(R.id.btnEmail);
+
+        sendmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(chooser);
             }
         });
     }

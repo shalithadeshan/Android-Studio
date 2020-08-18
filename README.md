@@ -13,3 +13,4 @@
 <h3>2020-08-18</h3>
 <li>Passing data using intent</li>
 <li>Passing data using intent (Bundle object)</li>
+<li>Implicit intent</li>
