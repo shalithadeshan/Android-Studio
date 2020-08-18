@@ -33,13 +33,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        final Intent intent = new Intent(this,Activity2.class);
+
+        String name = "Shalitha Deshan Jayasekara";
+        int age = 22;
+
+    /*    intent.putExtra("USER_NAME",name);
+        intent.putExtra("USER_AGE",age);*/
+
+        Bundle extras = new Bundle();
+        extras.putString("USER_NAME",name);
+        extras.putInt("USER_AGE",age);
+
+        intent.putExtras(extras);
+
         button2 = findViewById(R.id.btnNext);
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i =  new Intent(getApplicationContext(),Activity2.class);
-                startActivity(i);
+                startActivity(intent);
             }
         });
     }

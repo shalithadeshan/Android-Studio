@@ -5,4 +5,6 @@
     <string name="nextActivity">Next Activity</string>
     <string name="activityTwo">Activity Two</string>
     <string name="preactivity">Previous Activity</string>
+    <string name="username">User Name</string>
+    <string name="userage">User Age</string>
 </resources>

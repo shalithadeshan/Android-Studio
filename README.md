@@ -9,3 +9,7 @@
 
 <h3>2020-08-17</h3>
 <li>Explicit intent to MainActivity and Activity2</li>
+
+<h3>2020-08-18</h3>
+<li>Passing data using intent</li>
+<li>Passing data using intent (Bundle object)</li>
