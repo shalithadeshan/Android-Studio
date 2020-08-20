@@ -14,3 +14,6 @@
 <li>Passing data using intent</li>
 <li>Passing data using intent (Bundle object)</li>
 <li>Implicit intent</li>
+
+<h3>2020-08-20</h3>
+<li>Linear layout</li>
