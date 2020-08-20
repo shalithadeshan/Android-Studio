@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static final String TAG = "Shali";
-    Button button,button2,sendmail;
+    Button button,button2,sendmail,cal;
     TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +76,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(chooser);
+            }
+        });
+
+        cal = findViewById(R.id.btnCal);
+        cal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cal = new Intent(getApplicationContext(),LinearActivity.class);
+                startActivity(cal);
             }
         });
     }
