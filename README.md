@@ -19,3 +19,6 @@
 <li>Linear layout</li>
 <li>Layout weight</li>
 <li>calculator interface with linear layout</li>
+
+<h3>2020-08-22</h3>
+<li>Padding and margin</li>
