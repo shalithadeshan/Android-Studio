@@ -37,4 +37,14 @@ public class Activity2 extends AppCompatActivity {
         Intent i = new Intent(this,MainActivity.class);
         startActivity(i);
     }
+
+    public void GoToRel(View view) {
+        Intent rel =  new Intent(this,RelativeActivity.class);
+        startActivity(rel);
+    }
+
+    public void GoToCons(View view) {
+        Intent cons = new Intent(this, ConstraintActivity.class);
+        startActivity(cons);
+    }
 }

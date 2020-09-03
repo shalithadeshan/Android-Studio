@@ -29,4 +29,9 @@
     <string name="Bracket">()</string>
     <string name="eqation">=</string>
     <string name="calculator">Calculator</string>
+    <string name="relative_avtivity">Relative Avtivity</string>
+    <string name="realativeBtn_2">Relative 2</string>
+    <string name="go_to_rel">Go To Rel Activity</string>
+    <string name="constraintLayout">Constraint Layout</string>
+    <string name="goToCons">Go To Cons</string>
 </resources>

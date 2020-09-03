@@ -22,3 +22,7 @@
 
 <h3>2020-08-22</h3>
 <li>Padding and margin</li>
+
+<h3>2020-09-03</h3>
+<li>Relative layout</li>
+<li>Constraint layout</li>
