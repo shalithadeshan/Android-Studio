@@ -34,4 +34,8 @@
     <string name="go_to_rel">Go To Rel Activity</string>
     <string name="constraintLayout">Constraint Layout</string>
     <string name="goToCons">Go To Cons</string>
+    <string name="email">E mail</string>
+    <string name="password">Password</string>
+    <string name="enteremail">Enter Email</string>
+    <string name="enterpassword">Enter Password</string>
 </resources>

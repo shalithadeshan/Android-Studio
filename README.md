@@ -26,3 +26,10 @@
 <h3>2020-09-03</h3>
 <li>Relative layout</li>
 <li>Constraint layout</li>
+
+<h3>2020-09-04</h3>
+<li>match constraint</li>
+<li>Chain</li>
+<li>Guide line</li>
+<li>Barrier</li>
+<li>Baseline</li>
