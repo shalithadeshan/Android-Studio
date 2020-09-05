@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -135,5 +136,10 @@ public class MainActivity extends AppCompatActivity {
    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
        super.onRestoreInstanceState(savedInstanceState);
         Log.i(TAG,"onRestoreInstanceState");
+    }
+
+    public void ShowToast(View view) {
+        Toast toast = Toast.makeText(this,"Name Changed",Toast.LENGTH_LONG);
+        toast.show();
     }
 }
